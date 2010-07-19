@@ -1,0 +1,48 @@
+h1. port-clojure
+
+h2. Overview
+
+A local macport repository to install clojure 1.2.0_beta1.
+
+h2. Features
+
+# class path
+.clojure defaults to ~/.clojure
+# initial clojure
+.clojure.clj defaults to ~/.clojure.clj
+
+h2. Installation
+
+*Requirements*
+
+# MacPorts http://www.macports.org/
+
+Required but should already be installed:
+
+# python http://python.org/
+# ant http://ant.apache.org/
+# maven http://maven.apache.org/
+# java http://www.java.com
+# git http://git-scm.com/
+
+To Configure MacPorts
+<code>
+python port-clojure-conf.py 
+</code>
+
+To Install
+<code>
+port install clojure-devel clojure-contrib-devel
+</code>
+
+I personally recommend rlwrap
+<code>
+port install rlwrap
+port install clojure-devel +rlwrap clojure-contrib-devel
+</code>
+or jline
+<code>
+port install clojure-devel +jline clojure-contrib-devel
+</code>
+
+Please submit any issues. Everything currently works for me. I'd like to eventually update the macports repository with this port so please provide feedback.
