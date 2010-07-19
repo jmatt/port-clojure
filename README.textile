@@ -6,16 +6,17 @@ A local macport repository to install clojure 1.2.0_beta1.
 
 h2. Features
 
-# class path
-.clojure defaults to ~/.clojure
-# initial clojure
-.clojure.clj defaults to ~/.clojure.clj
+* Class Path through .clojure file
+  .clojure defaults to ~/.clojure
+* Initial clojure code for the repl
+  .clojure.clj defaults to ~/.clojure.clj
+* Code completion and history through rlwrap
 
 h2. Installation
 
 *Requirements*
 
-# MacPorts http://www.macports.org/
+* MacPorts http://www.macports.org/
 
 Required but should already be installed:
 
