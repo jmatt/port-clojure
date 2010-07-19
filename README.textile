@@ -16,15 +16,15 @@ h2. Installation
 
 *Requirements*
 
-* MacPorts http://www.macports.org/
+* "MacPorts":http://www.macports.org/
 
 Required but should already be installed:
 
-# python http://python.org/
-# ant http://ant.apache.org/
-# maven http://maven.apache.org/
-# java http://www.java.com
-# git http://git-scm.com/
+# "python":http://python.org/
+# "ant":http://ant.apache.org/
+# "maven":http://maven.apache.org/
+# "java":http://www.java.com
+# "git":http://git-scm.com/
 
 To Configure MacPorts
 <code>
