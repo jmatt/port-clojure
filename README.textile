@@ -1,8 +1,10 @@
 h1. port-clojure
 
+
 h2. Overview
 
 A local macport repository to install clojure 1.2.0-beta1.
+
 
 h2. Features
 
@@ -12,6 +14,7 @@ h2. Features
 * Initial clojure code for the repl
   defaults to ~/.clojure.clj
 * Code completion and history through rlwrap
+
 
 h2. Installation
 
@@ -28,6 +31,7 @@ Required but should already be installed:
 # "git":http://git-scm.com/
 # optional: rlwrap (port install rlwrap)
 
+
 h4. To Configure MacPorts
 
 This will update your sources.conf and create symlinks or copies of clojure-devel and clojure-contrib-devel. I wrote this as a convenience so people could test this port install before it is submited to macports. This can be done manually by editing your macport sources.conf. Then moving the lang directory and PortIndex files to the new local repository.
@@ -36,12 +40,14 @@ For help:
 <code>
 python port-clojure-conf.py --help
 </code>
-To use it:
+To use:
 <code>
 sudo python port-clojure-conf.py 
 </code>
 
+
 h4. To Install
+
 <code>
 sudo port install clojure-devel clojure-contrib-devel
 </code>
@@ -57,6 +63,7 @@ port install clojure-devel +jline clojure-contrib-devel
 </code>
 
 Please submit any issues. Everything works for me. As I stated earlier, I'd like to eventually update the macports repository with this port so please provide feedback.
+
 
 h2. Roadmap
 
