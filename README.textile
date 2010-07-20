@@ -2,14 +2,15 @@ h1. port-clojure
 
 h2. Overview
 
-A local macport repository to install clojure 1.2.0_beta1.
+A local macport repository to install clojure 1.2.0-beta1.
 
 h2. Features
 
+* Build and install clojure and/or clojure-contrib 1.2.0-beta1
 * Class Path through .clojure file
-  .clojure defaults to ~/.clojure
+  defaults to ~/.clojure
 * Initial clojure code for the repl
-  .clojure.clj defaults to ~/.clojure.clj
+  defaults to ~/.clojure.clj
 * Code completion and history through rlwrap
 
 h2. Installation
@@ -25,15 +26,24 @@ Required but should already be installed:
 # "maven":http://maven.apache.org/
 # "java":http://www.java.com
 # "git":http://git-scm.com/
+# optional: rlwrap (port install rlwrap)
 
-To Configure MacPorts
+h4. To Configure MacPorts
+
+This will update your sources.conf and create symlinks or copies of clojure-devel and clojure-contrib-devel. I wrote this as a convenience so people could test this port install before it is submited to macports. This can be done manually by editing your macport sources.conf. Then moving the lang directory and PortIndex files to the new local repository.
+
+For help:
 <code>
-python port-clojure-conf.py 
+python port-clojure-conf.py --help
+</code>
+To use it:
+<code>
+sudo python port-clojure-conf.py 
 </code>
 
-To Install
+h4. To Install
 <code>
-port install clojure-devel clojure-contrib-devel
+sudo port install clojure-devel clojure-contrib-devel
 </code>
 
 I personally recommend rlwrap
@@ -46,4 +56,10 @@ or jline
 port install clojure-devel +jline clojure-contrib-devel
 </code>
 
-Please submit any issues. Everything currently works for me. I'd like to eventually update the macports repository with this port so please provide feedback.
+Please submit any issues. Everything works for me. As I stated earlier, I'd like to eventually update the macports repository with this port so please provide feedback.
+
+h2. Roadmap
+
+* Add port installation for lein if it is also out of date.
+* Continue to update the clj scripts. 
+* Any other improvements that have community support. Some examples off the top of my head: cljr integration... another version that will build using head. Add a way to pass java options to clj. Deprecate clj and name it clojure.
