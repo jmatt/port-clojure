@@ -5,7 +5,7 @@ PortSystem          1.0
 name                clojure-devel
 conflicts           clojure
 version             1.2.0-beta1
-epoch		    git-20100220 -> 1.2.0-beta1
+epoch		    1
 revision            0
 categories          lang java
 maintainers         gmail.com:ian.eure jmatt.org:jmatt
