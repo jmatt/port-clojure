@@ -71,3 +71,4 @@ h2. Roadmap
 * Add port installation for lein if it is also out of date.
 * Continue to update the clj scripts. 
 * Any other improvements that have community support. Some examples off the top of my head: cljr integration... another version that will build using head. Add a way to pass java options to clj. Deprecate clj and name it clojure.
+
