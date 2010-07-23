@@ -1,14 +1,15 @@
-# $Id: Portfile 64052 2010-02-20 22:44:16Z ieure@macports.org $
+# $Id$
 
 PortSystem          1.0
 
 name                clojure-contrib-devel
 conflicts           clojure-contrib
-version             1.2.0-beta1
-epoch		    1
+version             1.2.0-beta1		    
 revision	    0
+epoch		    20100722
 categories          lang java
-maintainers         gmail.com:ian.eure jmatt.org:jmatt
+maintainers         gmail.com:ian.eure \
+		    jmatt.org:jmatt
 description         The Clojure programming language (development) - Contrib
 long_description    Clojure is a dynamic programming language for the JVM. \
                     It is interactive, yet compiled, with a robust \
@@ -33,7 +34,8 @@ destroot {
     set javadir ${destroot}${prefix}/share/java
     set clojuredir ${javadir}/clojure/lib
     set contribjar ${clojuredir}/clojure-contrib.jar
-    set worksrc_contribjar clojure-contrib-1.2.0-SNAPSHOT.jar
+    set major [lindex [split ${version} -] 0]
+    set worksrc_contribjar clojure-contrib-${major}-SNAPSHOT.jar
 
     xinstall -m 0755 -d ${javadir}
     xinstall -m 0755 -d ${clojuredir}

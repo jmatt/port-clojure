@@ -47,8 +47,7 @@ else
 fi
 
 if [ -z "$1" ]; then
-  exec java -classpath $cp $cljclass $cljinit --repl
+  exec java $JAVA_OPTS -classpath $cp $cljclass $cljinit --repl
 else
-  scriptname=$1
-  exec java -classpath "$cp" $cljclass $cljinit $scriptname -- "$@"
+  exec java $JAVA_OPTS -classpath $cp $cljclass $cljinit $*
 fi

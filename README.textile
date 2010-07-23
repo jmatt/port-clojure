@@ -45,6 +45,7 @@ To use:
 sudo python port-clojure-conf.py 
 </code>
 
+Note: The old clojure-contrib-devel version is bad because it contains git in the version name. This will eventually be patched but it can cause havoc if you update port with my local repository. To fix it just edit the clojure-contrib-devel file from git-20100220 to 20100220.
 
 h4. To Install
 

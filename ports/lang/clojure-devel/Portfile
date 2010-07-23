@@ -1,14 +1,15 @@
-# $Id: Portfile 67435 2010-05-09 18:36:05Z jmr@macports.org $
+# $Id$
 
 PortSystem          1.0
 
 name                clojure-devel
 conflicts           clojure
 version             1.2.0-beta1
-epoch		    1
 revision            0
+epoch		    20100722
 categories          lang java
-maintainers         gmail.com:ian.eure jmatt.org:jmatt
+maintainers         gmail.com:ian.eure \
+		    jmatt.org:jmatt
 description         The Clojure programming language (development version)
 long_description    Clojure is a dynamic programming language for the JVM. \
                     It is interactive, yet compiled, with a robust \
@@ -27,11 +28,7 @@ use_configure       no
 build.cmd           ant
 build.target        jar
 
-variant readline conflicts rlwrap description {Use readline support} {
-    depends_run-append port:jline
-}
-
-variant rlwrap conflicts readline description {Use rlwrap support for tab completion, parenthesis matching} {
+variant rlwrap description {Use rlwrap support for tab completion, parenthesis matching} {
     depends_run-append port:rlwrap
 }
 
@@ -43,10 +40,6 @@ destroot {
     set clojurelink ${prefix}/share/java/clojure/bin/clj
     set clojuresh clj.sh
     set bindir ${destroot}${prefix}/bin
-    
-    if {[variant_isset readline]} {
-        set clojuresh clj-jline.sh
-    }
     
     if {[variant_isset rlwrap]} {
         set clojuresh clj-rlwrap.sh
