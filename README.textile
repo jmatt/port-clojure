@@ -45,7 +45,7 @@ To use:
 sudo python port-clojure-conf.py 
 </code>
 
-Note: The old clojure-contrib-devel version is bad because it contains git in the version name. This will eventually be patched but it can cause havoc if you update port with my local repository. To fix it just edit the clojure-contrib-devel file from git-20100220 to 20100220.
+Note: The old clojure-contrib-devel version is bad because it contains git in the version name. This will eventually be patched but it can cause havoc if you update port with my local repository. To temporarily fix it just edit macport's old clojure-contrib-devel file and change version from git-20100220 to 20100220.
 
 h4. To Install
 
@@ -58,10 +58,8 @@ I personally recommend rlwrap
 port install rlwrap
 port install clojure-devel +rlwrap clojure-contrib-devel
 </code>
-or jline
-<code>
-port install clojure-devel +jline clojure-contrib-devel
-</code>
+
+Note: jline (readline) removed per the macports trac tickets on clojure.
 
 Please submit any issues. Everything works for me. As I stated earlier, I'd like to eventually update the macports repository with this port so please provide feedback.
 
