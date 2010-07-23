@@ -1,0 +1,11 @@
+--- Portfile.orig	2010-07-23 00:51:32.000000000 -0700
++++ Portfile	2010-07-23 00:51:49.000000000 -0700
+@@ -3,7 +3,7 @@
+ PortSystem          1.0
+ 
+ name                clojure-contrib-devel
+-version             git-20100220
++version             20100220
+ categories          lang java
+ maintainers         gmail.com:ian.eure
+ description         The Clojure programming language (development) - Contrib

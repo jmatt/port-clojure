@@ -1,0 +1,46 @@
+Vader:ports jmatt$
+⇝ sudo port upgrade outdated
+Password:
+invalid bareword "git"
+in expression "git-20100220 -> 1.2.0-bet...";
+should be "$git" or "{git}" or "git(...)" or ...
+    (parsing expression "git-20100220 -> 1.2.0-...")
+    invoked from within
+"expr $installed_epoch - $latest_epoch"
+    (procedure "get_outdated_ports" line 60)
+    invoked from within
+"get_${name}_ports"
+    ("^outdated(@.*)?$" arm line 8)
+    invoked from within
+"switch -regex -- $token {
+        ^\\)$               -
+        ^\;                 -
+        ^_EOF_$             { # End of expression/cmd/file
+     ..."
+    (procedure "element" line 12)
+    invoked from within
+"element reslist"
+    (procedure "unaryExpr" line 17)
+    invoked from within
+"unaryExpr reslist"
+    (procedure "andExpr" line 4)
+    invoked from within
+"andExpr reslist"
+    (procedure "orExpr" line 4)
+    invoked from within
+"orExpr blist"
+    (procedure "seqExpr" line 16)
+    invoked from within
+"seqExpr reslist"
+    (procedure "portExpr" line 3)
+    invoked from within
+"portExpr portlist"
+    (procedure "process_cmd" line 77)
+    invoked from within
+"process_cmd $remaining_args"
+    invoked from within
+"if { [llength $remaining_args] > 0 } {
+
+    # If there are remaining arguments, process those as a command
+    set exit_status [process_cmd $remaining..."
+    (file "/opt/local/bin/port" line 4403)
