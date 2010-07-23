@@ -56,7 +56,6 @@ sudo port install clojure-devel clojure-contrib-devel
 I personally recommend rlwrap
 <code>
 port install rlwrap
-
 port install clojure-devel +rlwrap clojure-contrib-devel
 </code>
 
