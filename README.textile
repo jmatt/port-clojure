@@ -3,12 +3,12 @@ h1. port-clojure
 
 h2. Overview
 
-A local macport repository to install clojure 1.2.0-beta1.
+A local macport repository to install clojure development branches.
 
 
 h2. Features
 
-* Build and install clojure and/or clojure-contrib 1.2.0-beta1
+* Build and install clojure and/or clojure-contrib 1.2.0-RC1
 * Class Path through .clojure file
   defaults to ~/.clojure
 * Initial clojure code for the repl
