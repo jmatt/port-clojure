@@ -13,6 +13,7 @@ h2. Features
   defaults to ~/.clojure
 * Initial clojure code for the repl
   defaults to ~/.clojure.clj
+* Add additional jars installed in the MacPort lib directory to the Class Path. (for example clojure-contrib.jar)
 * Code completion and history through rlwrap
 
 
