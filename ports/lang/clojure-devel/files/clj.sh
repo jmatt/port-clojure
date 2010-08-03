@@ -26,8 +26,7 @@ cljjar="$dir/../$cljjar"
 cp="${PWD}:${cljjar}"
 
 if [ -d $cljlib ]; then
-    cljlibjars="${cljlib}/*.jar"
-    
+    cljlibjars="${cljlib}/*.jar"    
     for f in $cljlibjars 
     do
 	if [ $f != $cljjar ]; then

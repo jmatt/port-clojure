@@ -30,7 +30,6 @@ cljcompletions="$dir/../$cljcompletions"
 
 if [ -d $cljlib ]; then
     cljlibjars="${cljlib}/*.jar"
-
     for f in $cljlibjars 
     do
         if [ $f != $cljjar ]; then
