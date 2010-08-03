@@ -5,6 +5,7 @@
 BREAK_CHARS="\(\){}[],^%$#@\"\";:''|\\"
 
 cljjar='lib/clojure.jar'
+cljlib='lib'
 cljclass='clojure.main'
 cljcompletions='.clj_completions'
 
@@ -23,8 +24,20 @@ done
 dir=`dirname $dir`
 dir=`cd "$dir" > /dev/null && pwd`
 cljjar="$dir/../$cljjar"
+cljlib="$dir/../$cljlib"
 cp="${PWD}:${cljjar}"
 cljcompletions="$dir/../$cljcompletions"
+
+if [ -d $cljlib ]; then
+    cljlibjars="${cljlib}/*.jar"
+
+    for f in $cljlibjars 
+    do
+        if [ $f != $cljjar ]; then
+            cp="${cp}:${f}"
+        fi
+    done
+fi
 
 # Add extra jars as specified by `.clojure` file
 # Borrowed from <http://github.com/mreid/clojure-framework>

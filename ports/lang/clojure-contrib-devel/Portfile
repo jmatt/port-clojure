@@ -35,7 +35,7 @@ destroot {
     set clojuredir ${javadir}/clojure/lib
     set contribjar ${clojuredir}/clojure-contrib.jar
     set major [lindex [split ${version} -] 0]
-    set worksrc_contribjar clojure-contrib-${major}-SNAPSHOT.jar
+    set worksrc_contribjar clojure-contrib-${version}.jar
 
     xinstall -m 0755 -d ${javadir}
     xinstall -m 0755 -d ${clojuredir}

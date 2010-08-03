@@ -3,6 +3,7 @@
 # clj - Clojure launcher script
 
 
+cljlib='lib'
 cljjar='lib/clojure.jar'
 cljclass='clojure.main'
 
@@ -20,8 +21,20 @@ done
 
 dir=`dirname $dir`
 dir=`cd "$dir" > /dev/null && pwd`
+cljlib="$dir/../$cljlib"
 cljjar="$dir/../$cljjar"
 cp="${PWD}:${cljjar}"
+
+if [ -d $cljlib ]; then
+    cljlibjars="${cljlib}/*.jar"
+    
+    for f in $cljlibjars 
+    do
+	if [ $f != $cljjar ]; then
+	    cp="${cp}:${f}"
+	fi
+    done
+fi
 
 # Add extra jars as specified by `.clojure` file
 # Borrowed from <http://github.com/mreid/clojure-framework>
