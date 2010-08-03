@@ -58,3 +58,4 @@ destroot {
     
     ln -s ${clojurelink} ${bindir}/clj
 }
+
