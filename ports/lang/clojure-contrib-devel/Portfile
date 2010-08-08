@@ -4,9 +4,9 @@ PortSystem          1.0
 
 name                clojure-contrib-devel
 conflicts           clojure-contrib
-version             1.2.0-RC1		    
+version             1.2.0-RC2
 revision	    0
-epoch		    20100802
+epoch		    20100808
 categories          lang java
 maintainers         gmail.com:ian.eure \
 		    jmatt.org:jmatt
@@ -22,7 +22,7 @@ depends_build       port:clojure-devel
 
 fetch.type          git
 git.url		    git://github.com/clojure/clojure-contrib.git
-git.branch	    71aea5906461791ba25de094e86cab26b9685f90
+git.branch	    e2ba9fca18675b065afc47bd31fcbc76f01cfc77
 
 use_configure       no
 
