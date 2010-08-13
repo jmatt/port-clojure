@@ -21,7 +21,7 @@ platforms           darwin
 
 fetch.type          git
 git.url             git://github.com/clojure/clojure.git
-git.branch          0f47e7c575390ddf0df895c26c29f97c8a4c1618
+git.branch          28b24dde078970e21aadd2969b1bff3d6ce12e0f
 
 
 use_configure       no

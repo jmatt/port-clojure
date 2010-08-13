@@ -22,7 +22,7 @@ depends_build       port:clojure-devel
 
 fetch.type          git
 git.url		    git://github.com/clojure/clojure-contrib.git
-git.branch	    e2ba9fca18675b065afc47bd31fcbc76f01cfc77
+git.branch	    e4ea06c9ff93df3b3f667ab5768618ece5a98b6e
 
 use_configure       no
 
