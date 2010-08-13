@@ -4,9 +4,9 @@ PortSystem          1.0
 
 name                clojure-contrib-devel
 conflicts           clojure-contrib
-version             1.2.0-RC2
+version             1.2.0-RC3
 revision	    0
-epoch		    20100808
+epoch		    20100813
 categories          lang java
 maintainers         gmail.com:ian.eure \
 		    jmatt.org:jmatt
