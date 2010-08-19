@@ -4,9 +4,9 @@ PortSystem          1.0
 
 name                clojure-devel
 conflicts           clojure
-version             1.2.0-RC3
+version             1.2.0
 revision            0
-epoch		    20100813
+epoch		    20100819
 categories          lang java
 maintainers         gmail.com:ian.eure \
 		    jmatt.org:jmatt
@@ -21,7 +21,7 @@ platforms           darwin
 
 fetch.type          git
 git.url             git://github.com/clojure/clojure.git
-git.branch          28b24dde078970e21aadd2969b1bff3d6ce12e0f
+git.branch          0436abdb51ae6d53517b74bf84a33162397744b0
 
 
 use_configure       no
